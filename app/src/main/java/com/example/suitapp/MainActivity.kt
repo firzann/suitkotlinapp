@@ -17,13 +17,11 @@ class MainActivity : AppCompatActivity() {
 
             user_move_img.setImageDrawable(getResources().getDrawable(R.drawable.gunting));
 
-            val computer_move = (1..4).random() // 4 is not included.
-
+            val computer_move = (1..4).random()
             if (computer_move == 1) {
 
                 computer_move_img.setImageDrawable(getResources().getDrawable(R.drawable.batu));
                 winner_tv.text = "komputer menang"
-
 
             } else if (computer_move == 2) {
 
@@ -91,6 +89,4 @@ class MainActivity : AppCompatActivity() {
         computer_move_img.setImageDrawable(getResources().getDrawable(R.drawable.tanda_tanya));
 
     }
-
-
 }
